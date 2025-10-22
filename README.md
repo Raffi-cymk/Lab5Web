@@ -123,3 +123,106 @@ switch(hari) {
 dan penghapusan <head> ganda, hasilnya:
 ✅ No errors found
 ⚠️ (hanya warning minor yang bisa diabaikan)
+
+
+---
+
+📋 Kodingan Akhir (Final Version)
+Berikut struktur HTML lengkap yang sudah valid:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mengenal JavaScript</title>
+    <script type="text/javascript" src="eksternal.js"></script>
+</head>
+<body>
+    <h1>Pengenalan JavaScript</h1>
+    <h3>Contoh document.write dan console.log</h3>
+
+    <script>
+        document.write("Hello World");
+        console.log("Hello World");
+    </script>
+
+    <script>
+        let nama = prompt("Siapa namamu?");
+        document.write("Halo, " + nama + "!");
+    </script>
+
+    <script>
+        function sapa() {
+            alert("Halo dunia dari fungsi!");
+        }
+    </script>
+
+    <button onclick="sapa()">Klik Aku!</button>
+
+    <script>
+        let nilai = prompt("Masukkan nilai kamu:");
+        if (nilai >= 60) {
+            alert("Kamu LULUS!");
+        } else {
+            alert("Kamu BELUM LULUS!");
+        }
+    </script>
+
+    <script>
+        let hari = prompt("Masukkan angka 1-3:");
+        switch(hari) {
+            case "1": alert("Senin"); break;
+            case "2": alert("Selasa"); break;
+            case "3": alert("Rabu"); break;
+            default: alert("Hari tidak dikenal");
+        }
+    </script>
+</body>
+</html>
+
+---
+
+🧠 Kesimpulan
+
+* JavaScript dapat menampilkan teks, pesan, dan interaksi di halaman web.
+
+* Kode dapat ditempatkan di internal HTML atau file eksternal .js.
+
+* Penggunaan alert(), prompt(), if–else, switch, dan function telah berhasil diterapkan.
+
+* Struktur HTML sudah valid (no error) di validator W3C.
+
+---
+
+❓ Pertanyaan & Jawaban Praktikum
+
+> Pertanyaan:
+1️⃣ Buat script untuk melakukan validasi pada isian form.
+
+✅ Jawaban Contoh Validasi Form:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validasi Form</title>
+    <script>
+        function validateForm() {
+            let nama = document.forms["myForm"]["nama"].value;
+            if (nama === "") {
+                alert("Nama harus diisi!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Form Validasi</h2>
+    <form name="myForm" onsubmit="return validateForm()">
+        Nama: <input type="text" name="nama">
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
+
+📍Fungsi: mengecek apakah kolom “Nama” diisi sebelum form dikirim.
