@@ -24,6 +24,7 @@ eksternal.js → file JavaScript eksternal
 ---
 
 ⚙️ Langkah-langkah Praktikum & Screenshot (1–17)
+
 📸 1. Kodingan JavaScript awal (dengan eksternal.js)
 
 Menunjukkan struktur awal HTML dan cara menghubungkan file JavaScript eksternal:
