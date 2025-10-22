@@ -31,6 +31,8 @@ Menunjukkan struktur awal HTML dan cara menghubungkan file JavaScript eksternal:
 <script type="text/javascript" src="eksternal.js"></script>
 📍Fungsi: memisahkan script dari HTML agar rapi dan mudah dikelola.
 
+![Screenshot 2025-10-22 105203.png](https://github.com/Raffi-cymk/Lab5Web/edit/main/README.md)
+
 📸 2. Kodingan file eksternal.js
 
 Isi file:
